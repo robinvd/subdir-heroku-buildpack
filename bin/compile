@@ -27,6 +27,8 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
 	fi
 fi
 
+ls $ENV_DIR/
+
 echo "PROJECT_PATH is undefined"
 exit 1
 
