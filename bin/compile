@@ -27,11 +27,18 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
 	fi
 fi
 
+PROJECT_PATH=`cat $ENV_DIR/PROJECT_PATH`
+
 echo ls
 ls $ENV_DIR/
 echo cat
 cat $ENV_DIR/PROJECT_PATH
+echo
 echo -----
+echo ls build
+ls $BUILD_DIR
+echo ls appdir
+ls $BUILD_DIR/$PROJECT_PATH
 
 echo "PROJECT_PATH is undefined"
 exit 1
